@@ -20,12 +20,12 @@
 
 1. **Create a MySQL database:** Set up a MySQL database and create a table that you'll interact with through your Node.js application.
 
-2. **Write your Node.js application:** Develop your application logic in a JavaScript file (e.g., `app.js`). Connect to your MySQL database using the `mysql` package, perform queries, and handle results accordingly.
+2. **Write your Node.js application:** Develop your application logic in a JavaScript file (e.g., `index.js`). Connect to your MySQL database using the `mysql` package, perform queries, and handle results accordingly.
 
-3. **Run your Node.js application:** Execute your Node.js application using the `node` command in the terminal. Make sure to navigate to the directory containing your application file (e.g., `app.js`):
+3. **Run your Node.js application:** Execute your Node.js application using the `node` command in the terminal. Make sure to navigate to the directory containing your application file (e.g., `index.js`):
 
     ```bash
-    node app.js
+    node index.js
     ```
 
    Ensure that your MySQL server is running and accessible from your Node.js application.
