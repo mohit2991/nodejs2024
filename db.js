@@ -1,10 +1,13 @@
 const mysql = require("mysql2");
+require("dotenv").config();
+
+const { DB_HOSTNAME, DB_USERNAME, DB_PASSWORD, DB_NAME } = process.env;
 
 const connection = mysql.createConnection({
-  host: "db4free.net",
-  user: "nodejsdb_2023",
-  password: "nodejsdb_2023",
-  database: "nodejsdb_2023",
+  host: DB_HOSTNAME,
+  user: DB_USERNAME,
+  password: DB_PASSWORD,
+  database: DB_NAME,
 });
 
 connection.connect((err) => {
