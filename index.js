@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const connection = require("./src/config/db"); // import db
 
 const routers = require("./src/routes/routers");
 

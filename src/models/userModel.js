@@ -12,6 +12,19 @@ const userModel = {
       return callBack(false, result);
     });
   },
+
+  login: (params, callBack) => {
+    const { email } = params; // Object Destructuring
+
+    const query = `SELECT email, password from users where email = ?`;
+    connection.query(query, [email], (error, result) => {
+      if (error) {
+        return callBack(error);
+      }
+
+      return callBack(false, result);
+    });
+  },
 };
 
 module.exports = userModel;
